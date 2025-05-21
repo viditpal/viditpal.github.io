@@ -148,18 +148,23 @@
           As a beginner eager to learn and grow, I am always looking for opportunities to develop my skills and contribute. I love connecting with professionals from different fields and believe in continuous learning through collaboration. If you think I can be helpful to you or your team, feel free to reach out—I’d be happy to connect!
         </div>
 
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+          <input type="hidden" name="access_key" value="e906d62d-8ea2-4c44-b843-50ccbc1f8041">
+          
           <label for="name">Name</label>
-          <input type="text" id="name">
+          <input type="text" id="name" name="name">
 
           <label for="email">Email</label>
-          <input type="email" id="email">
+          <input type="email" id="email" name="email" required>
 
           <label for="message">Message</label>
-          <textarea id="message" cols="30" rows="10"></textarea>
+          <textarea id="message" name = "message" cols="30" rows="10" required></textarea>
 
           <button type="submit">Send Message</button>
+          
         </form>
+        
       </div>
     </section>
   </main>
